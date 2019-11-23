@@ -1621,3 +1621,7 @@ body {
   text-align: center;
   font-size: 9px;
 }
+
+.download-word {
+  text-decoration: underline !important;
+}
