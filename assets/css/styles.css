@@ -1508,7 +1508,6 @@ body {
   left: 0;
   right: 0;
   font-size: 18px;
-  line-height: 30px;
   text-transform: capitalize;
   top: 50%;
   margin-top: 30px;
@@ -1528,7 +1527,6 @@ body {
   width: 100%;
   left: 0;
   font-size: 13px;
-  top: 50%;
   margin-top: 30px;
   transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
   transition: 0.5s;
