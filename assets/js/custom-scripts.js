@@ -47,16 +47,28 @@
 
   var trigger = $(".navbar-toggler"),
     overlay = $(".overlay"),
-    navc = $(".navbar-collapse"),
-    active = false;
+    navc = $(".navbar-collapse");
 
-  $(".navbar-toggler, .navbar-nav li a, .overlay").on("click", function() {
-    $(".navbar-toggler").toggleClass("active");
-    //   $('#js-navbar-menu').toggleClass('active');
-    //   $('.navbar-collapse').toggleClass('show');
-    overlay.toggleClass("active");
-    navc.toggleClass("active");
+  var collapse = true;
+
+  $(trigger).addClass("collapsed");
+  $(".navbar-toggler").on("click", function() {
+    //navc.toggleClass("active");
+    if(collapse){
+      navc.addClass("active");
+      collapse = false;    
+    } else{
+      navc.removeClass("active");
+      collapse = true;   
+    }  
   });
+
+  $(".navbar-nav li a").on("click", function() {
+    navc.removeClass("collapse");
+  });
+
+
+
 
   /*
     |=================
@@ -103,19 +115,6 @@
     }
   });
 
-  /*
-    |=================
-    | Progress bar
-    |================
-    */
-
-  // $(".determinate").each(function() {
-  //   var width = $(this).text();
-  //   $(this)
-  //     .css("width", width)
-  //     .empty()
-  //     .append('<i class="fa fa-circle"></i>');
-  // });
 
   /*
     |=================
