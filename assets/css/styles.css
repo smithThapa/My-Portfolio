@@ -9,7 +9,7 @@
 }
 
 :root {
-  --main-primary-color: #2196f3;
+  --main-primary-color: #0000FF
 }
 
 .shadow-1 {
@@ -36,7 +36,7 @@ body {
   text-align: left;
   position: relative;
   color: #999999;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 h1,
@@ -260,7 +260,7 @@ section {
   width: 14px;
 }
 .btn.btn-fill {
-  background-color: var(--main-primary-color);
+  background-color: #F82C00;
   color: #fff;
 }
 .btn.left-icon .icon {
@@ -715,6 +715,11 @@ body {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 0px;
 }
+
+.mh-home .mh-header-info .job_title {
+    color: #F82C00;
+}
+
 .mh-home .mh-header-info h2 {
   font-size: 60px;
   font-weight: 600;
@@ -777,13 +782,13 @@ body {
   margin: 0 auto;
   float: none;
   text-align: center;
-  border: 20px solid rgba(0, 0, 0, 0.17);
+  border: 20px solid #00A9FF;
   border-radius: 50%;
 }
 .mh-home .img-border {
   height: 400px;
   width: 400px;
-  border: 20px solid rgba(0, 0, 0, 0.07);
+  border: 20px solid  #0000FF;
   margin: 0 auto;
   border-radius: 50%;
 }
